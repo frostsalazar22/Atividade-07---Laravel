@@ -2,6 +2,8 @@
 <html>
 <head>
     <title>Editar Exame</title>
+    <link rel="stylesheet" href="{{ asset('css/estilo.css') }}">
+
 </head>
 <body>
     <h1>Editar Exame</h1>

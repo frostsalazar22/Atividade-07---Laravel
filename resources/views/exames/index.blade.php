@@ -2,19 +2,20 @@
 <html>
 <head>
     <title>Lista de Exames</title>
+    <link rel="stylesheet" href="tabela.css">
 </head>
 <body>
     <h1>Exames Cadastrados</h1>
 
     @if (session('success'))
-        <div style="color: green; font-weight: bold;">
+        <div class="success">
             {{ session('success') }}
         </div>
     @endif
 
-    <a href="{{ route('exames.create') }}">Novo Exame</a><br><br>
+    <p><a href="{{ route('exames.create') }}">+ Novo Exame</a></p>
 
-    <table border="1" cellpadding="10">
+    <table>
         <thead>
             <tr>
                 <th>ID</th>
